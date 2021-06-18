@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="atcrowdfunding02-admin-webui" />
+        <module name="module-test" />
         <module name="atcrowdfunding03-admin-component" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="atcrowdfunding02-admin-webui" target="1.5" />
       <module name="atcrowdfunding03-admin-component" target="1.5" />
       <module name="atcrowdfunding04-admin-entity" target="1.5" />
+      <module name="module-test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
