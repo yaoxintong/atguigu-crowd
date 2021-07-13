@@ -1,6 +1,8 @@
 import com.atguigu.crowd.entity.Admin;
+import com.atguigu.crowd.entity.Role;
 import com.atguigu.crowd.mapper.AdminMapper;
 import com.atguigu.crowd.mapper.MyadminMapper;
+import com.atguigu.crowd.mapper.RoleMapper;
 import com.atguigu.crowd.service.api.AdminService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -27,6 +29,16 @@ public class CrowdTest {
     @Autowired
     private AdminService adminService;
 
+    @Autowired
+    private RoleMapper roleMapper;
+
+    @Test
+    public void testRoleSave(){
+        for(int i = 0; i <235; i++){
+            roleMapper.insert(new Role(null, "role"+i));
+        }
+    }
+
     @Test
     public void textTx(){
         Admin admin = new Admin(null,"jerry", "123456", "杰瑞", "jerry@qq.com", null);
@@ -46,6 +58,12 @@ public class CrowdTest {
         logger.debug("hello i am debug");
         logger.error("hello i am erro");
         logger.info("heloow i am info");
+    }
+    @Test
+    public void test(){
+        for(int i=0;i<238;i++){
+            adminMapper.insert(new Admin(null,"loginAcct"+i,"userPswd"+i,"username"+i,"email"+i,null));
+        }
     }
     @Test
     public void  insertAdmin(){
