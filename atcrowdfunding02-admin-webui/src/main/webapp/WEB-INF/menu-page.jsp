@@ -243,6 +243,8 @@
         </div>
     </div>
 </div>
-
+    <%@include file="/WEB-INF/modal-menu-add.jsp" %>
+    <%@include file="/WEB-INF/modal-menu-edit.jsp" %>
+    <%@include file="/WEB-INF/modal-menu-confirm.jsp" %>
 </body>
 </html>

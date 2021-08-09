@@ -14,6 +14,7 @@
         <module>atcrowdfunding03-admin-component</module>
         <module>atcrowdfunding04-admin-entity</module>
 
+
     </modules>
     <properties>
         <!-- 声明属性， 对 Spring 的版本进行统一管理 -->

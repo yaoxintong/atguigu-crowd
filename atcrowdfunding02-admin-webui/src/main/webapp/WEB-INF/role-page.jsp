@@ -90,7 +90,7 @@
                     "success": function (response) {
                         var result = response.result;
                         if(result == "SUCCESS"){
-                            layer.msg(response.message)
+                            layer.msg("更新成功！")
                             // 重新加载分页
                             generatePage();
                         }
@@ -451,5 +451,5 @@
 <%@include file="/WEB-INF/modal-role-add.jsp" %>
 <%@include file="/WEB-INF/modal-role-edit.jsp" %>
 <%@include file="/WEB-INF/modal-role-confirm.jsp" %>
-
+<%@include file="/WEB-INF/modal-role-assign-auth.jsp" %>
 </body>
